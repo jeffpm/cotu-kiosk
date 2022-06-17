@@ -9,13 +9,11 @@ unclutter -idle 0.5 -root &
 sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' /home/pi/.config/chromium/Default/Preferences
 sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
 
-/usr/bin/chromium-browser --kiosk file://home/jeffpm/cotu-kiosk/cotu-pinball.jpg https://insider.sternpinball.com/kiosk/ags-usWmN-xkOX
+/usr/bin/chromium-browser --kiosk file:///home/jeffpm/cotu-kiosk/cotu-pinball.jpg https://insider.sternpinball.com/kiosk/ags-usWmN-xkOX &
 
 # cotu leaderboard - https://insider.sternpinball.com/kiosk/aTxvx-KwtN-zqNph
 
 while true; do
       xdotool keydown ctrl+Tab; xdotool keyup ctrl+Tab;
       sleep 30
-      xdotool keydown ctrl+Tab; xdotool keyup ctrl+Tab;
-      sleep 60
 done
