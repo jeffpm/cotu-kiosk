@@ -9,7 +9,7 @@ use in conjunction with https://pimylifeup.com/raspberry-pi-kiosk/
 install a fresh copy of raspian
 
 ### ssh
-allow ssh
+allow ssh using raspi-config
 
 ### set up steps for kiosk
 follow steps on https://pimylifeup.com/raspberry-pi-kiosk/
