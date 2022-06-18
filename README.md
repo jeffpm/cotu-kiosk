@@ -28,12 +28,16 @@ add username to allowed incroners
 add an incron entry for the kiosk dir. this will restart the service if any file within `cotu-kiosk` changes
 
 `incrontab -e`
+
 `/home/jeffpm/cotu-kiosk/        IN_MODIFY       sudo systemctl restart kiosk`
+
 `incrontab -l`
 
 ### cron
 add a cron entry which will pull the repo every 5 minutes
 
 `crontab -e`
+
 `*/5 * * * * cd /home/jeffpm/cotu-kiosk && git reset --hard HEAD && git pull`
+
 `crontab -l`
