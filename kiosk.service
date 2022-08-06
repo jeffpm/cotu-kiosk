@@ -7,7 +7,7 @@ After=graphical.target
 Environment=DISPLAY=:0
 Environment=XAUTHORITY=/home/pi/.Xauthority
 Type=simple
-ExecStart=~/cotu-kiosk/kiosk.sh
+ExecStart=/home/dan/cotu-kiosk/kiosk.sh
 Restart=on-abort
 User=dan
 
