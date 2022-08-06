@@ -17,4 +17,12 @@ sudo cp ./kiosk.service /lib/systemd/system/kiosk.service
 
 sudo systemctl enable kiosk.service
 
+sudo apt-get install incron
+
+sudo echo "dan" > /etc/incron.allow
+
+incrontab -l | { cat; echo "/home/dan/cotu-kiosk/ IN_MODIFY sudo systemctl restart kiosk"; } | crontab -
+
+incrontab -l | { cat; echo "*/5 * * * * cd /home/dan/cotu-kiosk && git reset --hard HEAD && git pull"; } | crontab -
+
 sudo systemctl start kiosk.service
