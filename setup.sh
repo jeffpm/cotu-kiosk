@@ -4,10 +4,10 @@ set -e
 sudo apt clean
 sudo apt autoremove -y
 
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
 
-sudo apt install xdotool unclutter sed
+sudo apt install xdotool unclutter sed -y
 
 cd ~
 git clone https://github.com/jeffpm/cotu-kiosk.git
