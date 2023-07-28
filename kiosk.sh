@@ -16,5 +16,5 @@ pages="https://insider.sternpinball.com/kiosk/ktim-MiwwU-MiM file:///home/dan/co
 
 while true; do
       xdotool keydown ctrl+Tab; xdotool keyup ctrl+Tab;
-      sleep 45
+      sleep 15
 done
