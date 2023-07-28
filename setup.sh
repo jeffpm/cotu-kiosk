@@ -26,6 +26,7 @@ sudo systemctl enable kiosk.service
 #hdmi_drive=2 sets the Raspbmc to normal HDMI mode (Sound will be sent if supported and enabled). 
 #Without this line, the Raspbmc would switch to DVI (with no audio) mode by default.
 
+#/boot/config.txt
 #hdmi_force_hotplug=1
 #hdmi_drive=2
 
